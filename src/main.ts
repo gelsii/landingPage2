@@ -10,39 +10,39 @@ const displayData = () => {
 
   const htmlStructure = async () => {
     try {
-      const mainSection = await fetch("/src/pages/mainSection.html");
+      const mainSection = await fetch("./src/pages/mainSection.html");
       const displayMainSection = await mainSection.text();
 
-      const Header = await fetch("/src/pages/header.html");
+      const Header = await fetch("./src/pages/header.html");
       const displayHeader = await Header.text();
 
       const differentBranch = await fetch("/src/pages/differentBranch.html");
       const displayDifferentBranch = await differentBranch.text();
 
-      const featuredIn = await fetch("/src/pages/featuredIn.html");
+      const featuredIn = await fetch("/.src/pages/featuredIn.html");
       const displayFeaturedIn = await featuredIn.text();
 
-      const tables = await fetch("/src/pages/tables.html");
+      const tables = await fetch("./src/pages/tables.html");
       const displayTables = await tables.text();
 
-      const teamsLove = await fetch("/src/pages/teamsLove.html");
+      const teamsLove = await fetch("./src/pages/teamsLove.html");
       const displayTeamsLove = await teamsLove.text();
 
       const elevateYourOffice = await fetch(
-        "/src/pages/ElevateYourOffice.html",
+        "./src/pages/ElevateYourOffice.html",
       );
       const displayElevateYourOffice = await elevateYourOffice.text();
 
-      const BranchExpert = await fetch("/src/pages/BranchExpert.html");
+      const BranchExpert = await fetch("./src/pages/BranchExpert.html");
       const displayBranchExpert = await BranchExpert.text();
 
-      const trustedTeams = await fetch("/src/pages/TrustedTeams.html");
+      const trustedTeams = await fetch("./src/pages/TrustedTeams.html");
       const displayTrustedTeams = await trustedTeams.text();
 
-      const estion = await fetch("/src/pages/estion.html");
+      const estion = await fetch("./src/pages/estion.html");
       const displayEstion = await estion.text();
 
-      const footer = await fetch("src/pages/footer.html");
+      const footer = await fetch("./src/pages/footer.html");
       const displayFooter = await footer.text();
 
       if (MainStructure) {
