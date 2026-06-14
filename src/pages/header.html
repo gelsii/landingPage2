@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="headerBody">
+    <header
+      class="fixed right-0 z-9999999 w-full  h-full bg-transparent backdrop-blur-xs"
+      id="headerPhone"
+    >
+      <div
+        class="absolute right-0 h-full w-65 bg-[#F3F0EC] rounded-bl-2xl rounded-tl-2xl shadow-2xl 2xs:w-75 xs:w-85 "
+      >
+        <div class="flex justify-start items-end ml-2 mt-2 " id="exitHeader">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="45"
+            fill="#484747"
+            viewBox="0 0 24 24"
+            class="cursor-pointer"
+          >
+            <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+            <path d="M15 11H8v2h7v4l6-5-6-5z"></path>
+            <path
+              d="M5 21h7v-2H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2"
+            ></path>
+          </svg>
+        </div>
+
+        <ul class="grid grid-rows-1 justify-center items-center mt-10 gap-10 text-xl w-full">
+          <li class="font-bold cursor-pointer">Office Furniture</li>
+          <li class="font-bold cursor-pointer">Design Services</li>
+          <li class="font-bold cursor-pointer">Free Installation</li>
+        </ul>
+
+        <div class="flex flex-col justify-center items-center gap-5 mt-10 w-full px-4">
+            <button class="w-full text-xl font-bold bg-[#31463B] text-white h-10 cursor-pointer">Log In</button>
+            <button class="border-3 w-full font-bold text-xl text-[#31463B] border-[#31463B] cursor-pointer h-10 ">Sign Up</button>
+        </div>
+
+        <div class="w-full h-100 absolute bottom-0 2xl:h-130 xs:h-160  ">
+          <img src="/src/assets/image/table.png" alt="" class="w-full h-full absolute">
+        </div>
+      </div>
+    </header>
+    <header
+      class="w-full h-15 bg-[#F3F0EC] fixed z-9999 shadow-2xs sm:h-20 lg:h-20"
+      id="header"
+    >
+      <div
+        class="flex w-full relative h-full justify-between px-5 items-center sm:px-5 lg:px-15"
+      >
+        <h1 class="text-3xl font-serif text-[#2F4A3F] lg:text-4xl xl:text-5xl">
+          Branch
+        </h1>
+        <div class="w-10 h-10 cursor-pointer sm:hidden" id="navIcon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              fill="rgb(42, 42, 42)"
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+            />
+          </svg>
+        </div>
+
+        <ul
+          class="hidden sm:flex sm:gap-5 sm:mt-1 md:gap-10 lg:gap-10 2xl:gap-25"
+        >
+          <li class="text-sm cursor-pointer md:text-base lg:text-xl">
+            Office Furniture
+          </li>
+          <li class="text-sm cursor-pointer md:text-base lg:text-xl">
+            Design Services
+          </li>
+          <li class="text-sm cursor-pointer md:text-base lg:text-xl">
+            Free Installation
+          </li>
+        </ul>
+        <button
+          class="hidden sm:flex sm:bg-[#2F4A3F] sm:text-white sm:w-32 sm:justify-center sm:items-center sm:h-10 sm:px-1 sm:rounded-xl sm:cursor-pointer md:w-34 lg:w-36 xl:w-45"
+        >
+          Build My Office
+        </button>
+      </div>
+    </header>
+
+    <script src="/src/typescript/pages/header.js"></script>
+  </body>
+</html>
